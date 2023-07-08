@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AboutActivity extends AppCompatActivity {
 
-    private LinearLayout mFbImg, mTwImg, mEmImg, mLink, mPlay;
+    private LinearLayout mFbImg, mEmImg, mLink;
     private TextView appVersion;
 
     @Override
@@ -22,9 +22,7 @@ public class AboutActivity extends AppCompatActivity {
 
         mFbImg = findViewById(R.id.mFb);
         mEmImg = findViewById(R.id.mEm);
-        mTwImg = findViewById(R.id.mTw);
         mLink  = findViewById(R.id.mLink);
-        mPlay  = findViewById(R.id.mPlay);
         appVersion = findViewById(R.id.app_version);
 
         appVersion.setText("1.0");
@@ -35,7 +33,7 @@ public class AboutActivity extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse("https://www.facebook.com/mouaz.kaadan"));
+                    i.setData(Uri.parse("https://www.facebook.com/MahrousElhawy"));
                     startActivity(i); } catch (Exception e){
                     Toast.makeText(getBaseContext(), "The link is broken", Toast.LENGTH_SHORT).show();                }
             }
@@ -46,7 +44,7 @@ public class AboutActivity extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse("https://www.linkedin.com/in/mouaz-kaadan-727911107/"));
+                    i.setData(Uri.parse("https://www.linkedin.com/in/MahrousElhawy/"));
                     startActivity(i); } catch (Exception e){
                     Toast.makeText(getBaseContext(), "The link is broken", Toast.LENGTH_SHORT).show();                }
             }
@@ -58,7 +56,7 @@ public class AboutActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setType("message/rfc822");
                 intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-                intent.putExtra(Intent.EXTRA_EMAIL  , new String[]{"mouaz.kaadan@gmail.com"});
+                intent.putExtra(Intent.EXTRA_EMAIL  , new String[]{"Mahrous.alhawy@gmail.com"});
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Namaz Vakitleri App Feedback");
                 intent.putExtra(Intent.EXTRA_TEXT, " ......... ");
                 if (intent.resolveActivity(getPackageManager()) != null) {
@@ -67,27 +65,9 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
 
-        mTwImg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse("https://twitter.com/mouazkaadan"));
-                    startActivity(i); } catch (Exception e){
-                    Toast.makeText(getBaseContext(), "The link is broken", Toast.LENGTH_SHORT).show();                }
-            }
-        });
 
-        mPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse("https://play.google.com/store/apps/developer?id=Mouaz+KAADAN"));
-                    startActivity(i); } catch (Exception e){
-                    Toast.makeText(getBaseContext(), "The link is broken", Toast.LENGTH_SHORT).show();                }
-            }
-        });
+
+
 
 
     }

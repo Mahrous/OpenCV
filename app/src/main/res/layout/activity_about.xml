@@ -28,7 +28,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="36dp"
-                    android:text="Mouaz KAADAN"
+                    android:text="Mahrous Ahmed"
                     android:textColor="#fff"
                     android:textSize="21sp"
                     android:textStyle="bold"/>
@@ -60,34 +60,12 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="mouaz.kaadan@gmail.com"
+                    android:text="Mahrous.Alhawy@gmail.com"
                     android:textStyle="bold" />
             </LinearLayout>
 
 
 
-            <LinearLayout
-                android:id="@+id/mTw"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal"
-                android:paddingLeft="25dp">
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/icon_twitter" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:text="twitter.com/mouazkaadan"
-                    android:textStyle="bold" />
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/mFb"
@@ -108,32 +86,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="www.facebook.com/mouaz.kaadan"
+                    android:text="www.facebook.com/MahrousElhawy"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/mPlay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal"
-                android:paddingLeft="25dp">
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    app:srcCompat="@drawable/ic_play" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:text="developer?id=Mouaz+KAADAN"
-                    android:textStyle="bold" />
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/mLink"
@@ -153,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="mouaz-kaadan-727911107/"
+                    android:text="www.linkedin.com/in/mahrous-ahmed/"
                     android:textStyle="bold"/>
             </LinearLayout>
 
