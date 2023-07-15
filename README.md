@@ -2,7 +2,7 @@
 OpenCV stands for Open Source Computer Vision Library, it’s an open source image processing and machine learning library. The library is available for multiple platforms such as Windows, Linux, Android and IOS. 
 
 # Content of Project:
-This project was created for a university course. In this project I used OpenCV library to create a simple Android app with some image processing functionalities.   
+In this project I used OpenCV library to create a simple Android app with some image processing functionalities.   
 Version 3.4.7 of the library was used because the latest versions had some compatibility problems with Android.  
 
 ![Screenshot](https://i.ibb.co/1R8gYW1/1.jpg)
